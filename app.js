@@ -27,8 +27,23 @@ function agregarAmigos () {
     //Actualizar lista en HTML
     ActualizarLista ();
 } 
-agregarAmigos ()
-// Function para la visualización en interface
 
+// Function para actualizar desde interfaz
+function ActualizarLista () {
+    const ListaAmigos = document.getElementById (`ListaAmigos`)
+
+    // Resetear lista actual
+    ListaAmigos.innerHTML = "" // Resetea cualquier contenido
+
+    // 
+    for(let Array = 0; Array <Amigos.length; Array++) {
+        const ArrayDos = document.createElement ("ArrayDos")
+        ArrayDos.textContent = Amigos [Array]
+        ListaAmigos.appendChild (ArrayDos);
+    }
+}
 
 // Function sorteo de amigo secreto
+function SorteAmigo () {
+
+}
