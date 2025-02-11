@@ -44,6 +44,21 @@ function ActualizarLista () {
 }
 
 // Function sorteo de amigo secreto
-function SorteAmigo () {
+function SortearAmigo () {
+    
+    // Verificar que se haya ingresado valores
+    if(Amigos.length === 0) {
+        alert ("No se registro ningun nombre para el sorteo, por favor intenten nuevamente.")
+        return;
+    } 
+    
+    // Generar tickets de sorteo
+    const IndiceAleatorio = Math.floor(Math.random() * Amigos.Length)
 
+    // Obtener el número ganador
+    cosnt AmigoGanador = amigos [IndiceAleatorio]
+
+    // Revelar nombre del ganador
+    const Ganador = document.getElementById ("Resultado")
+    Resultado.innerHTML = `El amigo secreto es: <strong>${AmigoGanador}`
 }
